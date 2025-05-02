@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="crypto-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto & Web3 Rewards | QuaymeproLeads</title>
+    <meta name="description" content="Earn cryptocurrency by completing tasks, learning about blockchain, and trying new Web3 platforms. Start building your crypto portfolio today.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .crypto-theme {
+            --primary-color: #00b894;
+            --secondary-color: #55efc4;
+            --accent-color: #fdcb6e;
+        }
+        
+        .crypto-theme .card {
+            border: 1px solid rgba(0, 184, 148, 0.3);
+            box-shadow: 0 0 15px rgba(0, 184, 148, 0.2);
+        }
+        
+        .crypto-theme .card:hover {
+            box-shadow: 0 0 25px rgba(0, 184, 148, 0.4);
+        }
+        
+        .crypto-theme .btn-primary {
+            background: linear-gradient(to right, #00b894, #55efc4);
+        }
+        
+        .crypto-theme h2::after {
+            background: linear-gradient(to right, #00b894, #55efc4);
+        }
+        
+        .crypto-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: var(--accent-color);
+            color: #2d3436;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Quaymepro<span>Leads</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="top-picks.html">Top Picks</a>
+                <a href="trending.html">New & Trending</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <!-- Copy from index.html -->
+    </div>
+
+    <!-- Category Header -->
+    <section class="category-header">
+        <div class="container">
+            <h1>Crypto & Web3 Rewards 🪙</h1>
+            <p class="subheadline">Earn cryptocurrency by completing tasks, learning about blockchain, and trying new Web3 platforms. Start building your crypto portfolio today.</p>
+            <div class="category-filters">
+                <div class="filter-group">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by">
+                        <option value="popular">Most Popular</option>
+                        <option value="payout">Highest Payout</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="crypto-type">Type:</label>
+                    <select id="crypto-type">
+                        <option value="all">All Types</option>
+                        <option value="earn">Earn Crypto</option>
+                        <option value="exchange">Exchanges</option>
+                        <option value="nft">NFT Platforms</option>
+                        <option value="learn">Learn & Earn</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Grid -->
+    <section class="category-offers">
+        <div class="container">
+            <div class="grid-container">
+                <!-- Offer 1 -->
+                <div class="card featured">
+                    <div class="crypto-badge">$25 in BTC</div>
+                    <div class="badge">🔥 Trending</div>
+                    <img src="images/crypto1.jpg" alt="Crypto Exchange" loading="lazy">
+                    <h3>Sign Up Bonus: $25 in Bitcoin</h3>
+                    <p>Get $25 worth of Bitcoin when you sign up and verify your account.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$10.00 per signup</span>
+                        <span class="type">Exchange</span>
+                    </div>
+                    <a href="https://yourcpa.link/btcbonus" target="_blank" class="btn btn-primary">Claim Bitcoin</a>
+                </div>
+                
+                <!-- Offer 2 -->
+                <div class="card">
+                    <div class="crypto-badge">Earn Crypto</div>
+                    <img src="images/crypto2.jpg" alt="Crypto Tasks" loading="lazy">
+                    <h3>Complete Tasks for Crypto</h3>
+                    <p>Earn various cryptocurrencies by completing simple online tasks.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$5.00 per signup</span>
+                        <span class="type">Earn Crypto</span>
+                    </div>
+                    <a href="https://yourcpa.link/cryptotasks" target="_blank" class="btn btn-primary">Start Earning</a>
+                </div>
+                
+                <!-- Offer 3 -->
+                <div class="card">
+                    <div class="crypto-badge">NFT Rewards</div>
+                    <img src="images/crypto3.jpg" alt="NFT Platform" loading="lazy">
+                    <h3>Free NFT for Signup</h3>
+                    <p>Get a free NFT worth $10 just for creating an account on this platform.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$8.00 per signup</span>
+                        <span class="type">NFT Platforms</span>
+                    </div>
+                    <a href="https://yourcpa.link/freenft" target="_blank" class="btn btn-primary">Claim NFT</a>
+                </div>
+                
+                <!-- Offer 4 -->
+                <div class="card featured">
+                    <div class="crypto-badge">Learn & Earn</div>
+                    <div class="badge">⭐ New Offer</div>
+                    <img src="images/crypto4.jpg" alt="Crypto Education" loading="lazy">
+                    <h3>Learn Crypto, Earn $50</h3>
+                    <p>Complete educational modules about blockchain and earn crypto rewards.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$15.00 per completion</span>
+                        <span class="type">Learn & Earn</span>
+                    </div>
+                    <a href="https://yourcpa.link/learncrypto" target="_blank" class="btn btn-primary">Start Learning</a>
+                </div>
+                
+                <!-- Offer 5 -->
+                <div class="card">
+                    <div class="crypto-badge">Staking</div>
+                    <img src="images/crypto5.jpg" alt="Crypto Staking" loading="lazy">
+                    <h3>High-Yield Crypto Staking</h3>
+                    <p>Earn up to 12% APY by staking your crypto with this platform.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$20.00 per deposit</span>
+                        <span class="type">Exchange</span>
+                    </div>
+                    <a href="https://yourcpa.link/cryptostaking" target="_blank" class="btn btn-primary">Start Staking</a>
+                </div>
+                
+                <!-- Offer 6 -->
+                <div class="card">
+                    <div class="crypto-badge">Play to Earn</div>
+                    <img src="images/crypto6.jpg" alt="Crypto Game" loading="lazy">
+                    <h3>Play-to-Earn Crypto Game</h3>
+                    <p>Earn cryptocurrency by playing this blockchain-based game.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$5.00 per install</span>
+                        <span class="type">Earn Crypto</span>
+                    </div>
+                    <a href="https://yourcpa.link/playtoearn" target="_blank" class="btn btn-primary">Play Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crypto Basics -->
+    <section class="crypto-basics">
+        <div class="container">
+            <h2>Crypto Basics for Beginners</h2>
+            <div class="basics-grid">
+                <div class="basic-card">
+                    <i class="fab fa-bitcoin"></i>
+                    <h3>What is Cryptocurrency?</h3>
+                    <p>Digital money secured by cryptography that operates independently of banks.</p>
+                </div>
+                <div class="basic-card">
+                    <i class="fas fa-wallet"></i>
+                    <h3>Get a Wallet</h3>
+                    <p>You'll need a digital wallet to store and manage your cryptocurrency.</p>
+                </div>
+                <div class="basic-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security First</h3>
+                    <p>Never share your private keys and enable two-factor authentication.</p>
+                </div>
+                <div class="basic-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Volatility Warning</h3>
+                    <p>Crypto prices can fluctuate dramatically in short periods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <!-- Copy from index.html -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Copy from index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Crypto filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const sortBy = document.getElementById('sort-by');
+            const cryptoType = document.getElementById('crypto-type');
+            const cards = document.querySelectorAll('.category-offers .card');
+            
+            function filterOffers() {
+                const sortValue = sortBy.value;
+                const typeValue = cryptoType.value;
+                
+                cards.forEach(card => {
+                    const cardType = card.querySelector('.type').textContent.toLowerCase();
+                    
+                    // Type filter
+                    if (typeValue !== 'all' && !cardType.includes(typeValue)) {
+                        card.style.display = 'none';
+                    } else {
+                        card.style.display = 'block';
+                    }
+                });
+                
+                // Convert NodeList to Array for sorting
+                const cardsArray = Array.from(cards);
+                const container = document.querySelector('.grid-container');
+                
+                // Sort based on selection
+                if (sortValue === 'payout') {
+                    cardsArray.sort((a, b) => {
+                        const aPayout = parseFloat(a.querySelector('.payout').textContent.replace(/\$| per .*/, ''));
+                        const bPayout = parseFloat(b.querySelector('.payout').textContent.replace(/\$| per .*/, ''));
+                        return bPayout - aPayout;
+                    });
+                } else if (sortValue === 'newest') {
+                    // This would normally come from a data attribute with actual dates
+                    cardsArray.sort((a, b) => {
+                        return Math.random() - 0.5; // Random for demo
+                    });
+                }
+                
+                // Re-append sorted cards
+                cardsArray.forEach(card => {
+                    container.appendChild(card);
+                });
+            }
+            
+            sortBy.addEventListener('change', filterOffers);
+            cryptoType.addEventListener('change', filterOffers);
+        });
+    </script>
+</body>
+</html>

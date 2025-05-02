@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="sweepstakes-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win Cash & Prizes | Sweepstakes Offers | QuaymeproLeads</title>
+    <meta name="description" content="Legitimate sweepstakes and giveaways where you can win cash, gift cards, and valuable prizes. No purchase necessary to enter.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .sweepstakes-theme {
+            --primary-color: #0984e3;
+            --secondary-color: #74b9ff;
+            --accent-color: #fdcb6e;
+        }
+        
+        .sweepstakes-theme .card {
+            border: 1px solid rgba(9, 132, 227, 0.3);
+            box-shadow: 0 0 15px rgba(9, 132, 227, 0.2);
+        }
+        
+        .sweepstakes-theme .card:hover {
+            box-shadow: 0 0 25px rgba(9, 132, 227, 0.4);
+        }
+        
+        .sweepstakes-theme .btn-primary {
+            background: linear-gradient(to right, #0984e3, #74b9ff);
+        }
+        
+        .sweepstakes-theme h2::after {
+            background: linear-gradient(to right, #0984e3, #74b9ff);
+        }
+        
+        .prize-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: var(--accent-color);
+            color: #2d3436;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Quaymepro<span>Leads</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="top-picks.html">Top Picks</a>
+                <a href="trending.html">New & Trending</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <!-- Copy from index.html -->
+    </div>
+
+    <!-- Category Header -->
+    <section class="category-header">
+        <div class="container">
+            <h1>Win Cash & Prizes 🎁</h1>
+            <p class="subheadline">Legitimate sweepstakes and giveaways where you can win cash, gift cards, and valuable prizes. No purchase necessary to enter.</p>
+            <div class="category-filters">
+                <div class="filter-group">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by">
+                        <option value="popular">Most Popular</option>
+                        <option value="prize-value">Prize Value</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="prize-type">Prize Type:</label>
+                    <select id="prize-type">
+                        <option value="all">All Prizes</option>
+                        <option value="cash">Cash</option>
+                        <option value="giftcards">Gift Cards</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Grid -->
+    <section class="category-offers">
+        <div class="container">
+            <div class="grid-container">
+                <!-- Offer 1 -->
+                <div class="card featured">
+                    <div class="prize-badge">$10,000 Prize</div>
+                    <div class="badge">🔥 Trending</div>
+                    <img src="images/sweep1.jpg" alt="$10K Cash Giveaway" loading="lazy">
+                    <h3>$10,000 Cash Giveaway</h3>
+                    <p>Enter daily for your chance to win a $10,000 cash prize. No purchase necessary.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$5.00 per entry</span>
+                        <span class="type">Cash</span>
+                    </div>
+                    <a href="https://yourcpa.link/10kgiveaway" target="_blank" class="btn btn-primary">Enter Now</a>
+                </div>
+                
+                <!-- Offer 2 -->
+                <div class="card">
+                    <div class="prize-badge">iPhone 15 Pro</div>
+                    <img src="images/sweep2.jpg" alt="iPhone Giveaway" loading="lazy">
+                    <h3>iPhone 15 Pro Max Giveaway</h3>
+                    <p>Win the latest iPhone just by entering your email. New winners every month.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$3.50 per entry</span>
+                        <span class="type">Electronics</span>
+                    </div>
+                    <a href="https://yourcpa.link/iphonegiveaway" target="_blank" class="btn btn-primary">Enter to Win</a>
+                </div>
+                
+                <!-- Offer 3 -->
+                <div class="card">
+                    <div class="prize-badge">$500 Amazon</div>
+                    <img src="images/sweep3.jpg" alt="Amazon Gift Card" loading="lazy">
+                    <h3>$500 Amazon Gift Card</h3>
+                    <p>Instant-win game for a chance at $500 Amazon credit. Multiple winners daily.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$2.00 per entry</span>
+                        <span class="type">Gift Cards</span>
+                    </div>
+                    <a href="https://yourcpa.link/amazongiveaway" target="_blank" class="btn btn-primary">Play to Win</a>
+                </div>
+                
+                <!-- Offer 4 -->
+                <div class="card featured">
+                    <div class="prize-badge">$5,000 Visa</div>
+                    <div class="badge">⭐ New Offer</div>
+                    <img src="images/sweep4.jpg" alt="Visa Gift Card" loading="lazy">
+                    <h3>$5,000 Visa Gift Card</h3>
+                    <p>Complete simple offers for more entries to win a $5,000 prepaid Visa card.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$4.00 per entry</span>
+                        <span class="type">Gift Cards</span>
+                    </div>
+                    <a href="https://yourcpa.link/visagiveaway" target="_blank" class="btn btn-primary">Get Entries</a>
+                </div>
+                
+                <!-- Offer 5 -->
+                <div class="card">
+                    <div class="prize-badge">PS5 Bundle</div>
+                    <img src="images/sweep5.jpg" alt="PS5 Giveaway" loading="lazy">
+                    <h3>PS5 + Games Bundle</h3>
+                    <p>Win a PlayStation 5 console with 5 popular games. Drawing ends soon!</p>
+                    <div class="offer-meta">
+                        <span class="payout">$3.00 per entry</span>
+                        <span class="type">Electronics</span>
+                    </div>
+                    <a href="https://yourcpa.link/ps5giveaway" target="_blank" class="btn btn-primary">Enter Today</a>
+                </div>
+                
+                <!-- Offer 6 -->
+                <div class="card">
+                    <div class="prize-badge">$1,000 Cash</div>
+                    <img src="images/sweep6.jpg" alt="Instant Win" loading="lazy">
+                    <h3>Instant Win $1,000</h3>
+                    <p>Spin the wheel for an instant chance to win $1,000 cash. Free to play.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$1.50 per play</span>
+                        <span class="type">Cash</span>
+                    </div>
+                    <a href="https://yourcpa.link/instantwin" target="_blank" class="btn btn-primary">Spin Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="tips-section">
+        <div class="container">
+            <h2>Sweepstakes Tips & Strategies</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Enter Daily</h3>
+                    <p>Many sweepstakes allow daily entries, increasing your chances over time.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Use Dedicated Email</h3>
+                    <p>Create an email just for sweepstakes to keep your primary inbox clean.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Track Deadlines</h3>
+                    <p>Note when each sweepstakes ends so you don't miss entry deadlines.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>Quality Over Quantity</h3>
+                    <p>Focus on higher-value prizes with better odds rather than entering everything.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <!-- Copy from index.html -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Copy from index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Sweepstakes filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const sortBy = document.getElementById('sort-by');
+            const prizeType = document.getElementById('prize-type');
+            const cards = document.querySelectorAll('.category-offers .card');
+            
+            function filterOffers() {
+                const sortValue = sortBy.value;
+                const typeValue = prizeType.value;
+                
+                cards.forEach(card => {
+                    const cardType = card.querySelector('.type').textContent.toLowerCase();
+                    
+                    // Type filter
+                    if (typeValue !== 'all' && !cardType.includes(typeValue)) {
+                        card.style.display = 'none';
+                    } else {
+                        card.style.display = 'block';
+                    }
+                });
+                
+                // Convert NodeList to Array for sorting
+                const cardsArray = Array.from(cards);
+                const container = document.querySelector('.grid-container');
+                
+                // Sort based on selection
+                if (sortValue === 'prize-value') {
+                    cardsArray.sort((a, b) => {
+                        const aPayout = parseFloat(a.querySelector('.payout').textContent.replace(/\$| per .*/, ''));
+                        const bPayout = parseFloat(b.querySelector('.payout').textContent.replace(/\$| per .*/, ''));
+                        return bPayout - aPayout;
+                    });
+                } else if (sortValue === 'newest') {
+                    // This would normally come from a data attribute with actual dates
+                    cardsArray.sort((a, b) => {
+                        return Math.random() - 0.5; // Random for demo
+                    });
+                }
+                
+                // Re-append sorted cards
+                cardsArray.forEach(card => {
+                    container.appendChild(card);
+                });
+            }
+            
+            sortBy.addEventListener('change', filterOffers);
+            prizeType.addEventListener('change', filterOffers);
+        });
+    </script>
+</body>
+</html>

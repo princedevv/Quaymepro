@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="solar-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar & Energy Savings | QuaymeproLeads</title>
+    <meta name="description" content="Earn money while saving on energy bills with these solar and energy efficiency programs. Get paid for switching to green energy solutions.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .solar-theme {
+            --primary-color: #fdcb6e;
+            --secondary-color: #e17055;
+            --accent-color: #00b894;
+        }
+        
+        .solar-badge {
+            background-color: var(--accent-color);
+            color: white;
+        }
+        
+        .solar-card {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .solar-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(253, 203, 110, 0.1) 0%, transparent 70%);
+            z-index: -1;
+        }
+        
+        .savings-amount {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .solar-icon {
+            position: absolute;
+            bottom: 70px;
+            right: 15px;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Quaymepro<span>Leads</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="top-picks.html">Top Picks</a>
+                <a href="trending.html">New & Trending</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <!-- Copy from index.html -->
+    </div>
+
+    <!-- Category Header -->
+    <section class="category-header">
+        <div class="container">
+            <h1>Solar & Energy Savings ☀️</h1>
+            <p class="subheadline">Earn money while saving on energy bills with these solar and energy efficiency programs. Get paid for switching to green energy solutions.</p>
+            <div class="category-filters">
+                <div class="filter-group">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by" class="styled-select">
+                        <option value="popular">Most Popular</option>
+                        <option value="savings">Highest Savings</option>
+                        <option value="payout">Highest Payout</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="solar-type">Program Type:</label>
+                    <select id="solar-type" class="styled-select">
+                        <option value="all">All Programs</option>
+                        <option value="solar">Solar Panels</option>
+                        <option value="efficiency">Energy Efficiency</option>
+                        <option value="rebates">Rebates</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Grid -->
+    <section class="category-offers">
+        <div class="container">
+            <div class="grid-container">
+                <!-- Offer 1 -->
+                <div class="card featured solar-card card-3d">
+                    <div class="badge solar-badge">⭐ Top Pick</div>
+                    <span class="savings-amount">Save 70%</span>
+                    <i class="fas fa-solar-panel solar-icon"></i>
+                    <img src="images/solar1.jpg" alt="Solar Panel Installation" loading="lazy">
+                    <h3>SunPower Solar Panels</h3>
+                    <p>Get $1000 cash back when you install solar panels. $0 down options available.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$150 per lead</span>
+                        <span class="type">Solar Panels</span>
+                    </div>
+                    <a href="https://yourcpa.link/sunpower" target="_blank" class="btn btn-primary">Get Quote</a>
+                </div>
+                
+                <!-- Offer 2 -->
+                <div class="card solar-card card-3d">
+                    <span class="savings-amount">Save 30%</span>
+                    <i class="fas fa-bolt solar-icon"></i>
+                    <img src="images/solar2.jpg" alt="Energy Plan" loading="lazy">
+                    <h3>Green Energy Switch</h3>
+                    <p>Switch to renewable energy and get $50 cash back. Lower rates guaranteed.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$30 per switch</span>
+                        <span class="type">Energy Efficiency</span>
+                    </div>
+                    <a href="https://yourcpa.link/greenenergy" target="_blank" class="btn btn-primary">Switch Now</a>
+                </div>
+                
+                <!-- Offer 3 -->
+                <div class="card solar-card card-3d">
+                    <span class="savings-amount">Save 25%</span>
+                    <i class="fas fa-home solar-icon"></i>
+                    <img src="images/solar3.jpg" alt="Home Insulation" loading="lazy">
+                    <h3>Home Efficiency Audit</h3>
+                    <p>Free energy audit with $500+ in potential rebates for upgrades.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$75 per audit</span>
+                        <span class="type">Energy Efficiency</span>
+                    </div>
+                    <a href="https://yourcpa.link/energyaudit" target="_blank" class="btn btn-primary">Schedule Audit</a>
+                </div>
+                
+                <!-- Offer 4 -->
+                <div class="card featured solar-card card-3d">
+                    <div class="badge solar-badge">🔥 Limited Time</div>
+                    <span class="savings-amount">Save $1000+</span>
+                    <i class="fas fa-sun solar-icon"></i>
+                    <img src="images/solar4.jpg" alt="Solar Program" loading="lazy">
+                    <h3>Tesla Solar Roof</h3>
+                    <p>Exclusive $1500 discount + federal tax credits available. 30-year warranty.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$200 per lead</span>
+                        <span class="type">Solar Panels</span>
+                    </div>
+                    <a href="https://yourcpa.link/teslasolar" target="_blank" class="btn btn-primary">Learn More</a>
+                </div>
+                
+                <!-- Offer 5 -->
+                <div class="card solar-card card-3d">
+                    <span class="savings-amount">Save 15%</span>
+                    <i class="fas fa-wind solar-icon"></i>
+                    <img src="images/solar5.jpg" alt="Smart Thermostat" loading="lazy">
+                    <h3>Nest Thermostat Rebate</h3>
+                    <p>Get a $100 rebate on a smart thermostat that saves energy automatically.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$25 per sale</span>
+                        <span class="type">Rebates</span>
+                    </div>
+                    <a href="https://yourcpa.link/nestrebate" target="_blank" class="btn btn-primary">Claim Rebate</a>
+                </div>
+                
+                <!-- Offer 6 -->
+                <div class="card solar-card card-3d">
+                    <span class="savings-amount">Save 40%</span>
+                    <i class="fas fa-lightbulb solar-icon"></i>
+                    <img src="images/solar6.jpg" alt="LED Lighting" loading="lazy">
+                    <h3>Whole Home LED Upgrade</h3>
+                    <p>Professional LED installation with 75% energy savings. $0 upfront cost.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$40 per signup</span>
+                        <span class="type">Energy Efficiency</span>
+                    </div>
+                    <a href="https://yourcpa.link/ledupgrade" target="_blank" class="btn btn-primary">Upgrade Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solar Benefits -->
+    <section class="solar-benefits">
+        <div class="container">
+            <h2>Why Go Solar & Energy Efficient?</h2>
+            <div class="benefits-grid">
+                <div class="benefit card-3d">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Lower Bills</h3>
+                    <p>Reduce your energy costs by 50-100% with solar panels.</p>
+                </div>
+                <div class="benefit card-3d">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h3>Tax Credits</h3>
+                    <p>Federal and state incentives can cover 30-50% of costs.</p>
+                </div>
+                <div class="benefit card-3d">
+                    <i class="fas fa-home"></i>
+                    <h3>Home Value</h3>
+                    <p>Solar panels increase property value by an average of 4.1%.</p>
+                </div>
+                <div class="benefit card-3d">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Environment</h3>
+                    <p>Reduce your carbon footprint by 3-4 tons annually.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <!-- Copy from index.html -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Copy from index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Solar filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const sortBy = document.getElementById('sort-by');
+            const solarType = document.getElementById('solar-type');
+            const cards = document.querySelectorAll('.category-offers .card');
+            
+            function filterOffers() {
+                const sortValue = sortBy.value;
+                const typeValue = solarType.value;
+                
+                cards.forEach(card => {
+                    const cardType = card.querySelector('.type').textContent.toLowerCase();
+                    
+                    // Type filter
+                    if (typeValue !== 'all' && !cardType.includes(typeValue)) {
+                        card.style.display = 'none';
+                    } else {
+                        card.style.display = 'block';
+                    }
+                });
+                
+                // Convert NodeList to Array for sorting
+                const cardsArray = Array.from(cards);
+                const container = document.querySelector('.grid-container');
+                
+                // Sort based on selection
+                if (sortValue === 'savings') {
+                    cardsArray.sort((a, b) => {
+                        const aSavings = parseFloat(a.querySelector('.savings-amount').textContent.replace(/[^0-9]/g, ''));
+                        const bSavings = parseFloat(b.querySelector('.savings-amount').textContent.replace(/[^0-9]/g, ''));
+                        return bSavings - aSavings;
+                    });
+                } else if (sortValue === 'payout') {
+                    cardsArray.sort((a, b) => {
+                        const aPayout = parseFloat(a.querySelector('.payout').textContent.replace(/\$| per .*/, ''));
+                        const bPayout = parseFloat(b.querySelector('.payout').textContent.replace(/\$| per .*/, ''));
+                        return bPayout - aPayout;
+                    });
+                }
+                
+                // Re-append sorted cards
+                cardsArray.forEach(card => {
+                    container.appendChild(card);
+                });
+            }
+            
+            sortBy.addEventListener('change', filterOffers);
+            solarType.addEventListener('change', filterOffers);
+        });
+    </script>
+</body>
+</html>

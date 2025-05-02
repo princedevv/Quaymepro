@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonLeads Admin Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Admin-specific styles */
+        .admin-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .admin-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .admin-nav {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+        
+        .admin-nav a {
+            padding: 10px 15px;
+            border-radius: 5px;
+            background: #f0f0f0;
+            color: #333;
+            font-weight: 600;
+        }
+        
+        .admin-nav a.active {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .admin-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+        }
+        
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .offer-list {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .offer-list th,
+        .offer-list td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .offer-list th {
+            background: #f5f5f5;
+            font-weight: 600;
+        }
+        
+        .offer-list tr:hover {
+            background: #f9f9f9;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn-edit {
+            background: var(--secondary-color);
+            color: white;
+        }
+        
+        .btn-delete {
+            background: #ff4757;
+            color: white;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .stat-card h3 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .stat-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Admin Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="admin.html" class="logo">Neon<span>Leads</span> Admin</a>
+            <div class="nav-links">
+                <a href="index.html" target="_blank"><i class="fas fa-external-link-alt"></i> View Site</a>
+                <button id="admin-logout" class="btn btn-secondary">Log Out</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Admin Content -->
+    <div class="admin-container">
+        <div class="admin-header">
+            <h1>Admin Dashboard</h1>
+            <p>Manage your CPA offers and website content</p>
+        </div>
+        
+        <div class="admin-nav">
+            <a href="#dashboard" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <a href="#offers"><i class="fas fa-gift"></i> Manage Offers</a>
+            <a href="#add-offer"><i class="fas fa-plus-circle"></i> Add New Offer</a>
+            <a href="#categories"><i class="fas fa-tags"></i> Categories</a>
+            <a href="#settings"><i class="fas fa-cog"></i> Settings</a>
+        </div>
+        
+        <!-- Dashboard Tab -->
+        <div id="dashboard-content" class="admin-content">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>142</h3>
+                    <p>Active Offers</p>
+                </div>
+                <div class="stat-card">
+                    <h3>8,542</h3>
+                    <p>Total Clicks</p>
+                </div>
+                <div class="stat-card">
+                    <h3>1,248</h3>
+                    <p>Conversions</p>
+                </div>
+                <div class="stat-card">
+                    <h3>$3,856</h3>
+                    <p>Estimated Earnings</p>
+                </div>
+            </div>
+            
+            <div class="admin-card">
+                <h2>Recent Activity</h2>
+                <table class="offer-list">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Offer</th>
+                            <th>Clicks</th>
+                            <th>Conversions</th>
+                            <th>EPC</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2023-11-15</td>
+                            <td>Blitz Play: Win Money</td>
+                            <td>328</td>
+                            <td>47</td>
+                            <td>$0.85</td>
+                        </tr>
+                        <tr>
+                            <td>2023-11-14</td>
+                            <td>AI Content Creator Pro</td>
+                            <td>215</td>
+                            <td>12</td>
+                            <td>$1.20</td>
+                        </tr>
+                        <tr>
+                            <td>2023-11-14</td>
+                            <td>Crypto Tracker Plus</td>
+                            <td>187</td>
+                            <td>23</td>
+                            <td>$0.65</td>
+                        </tr>
+                        <tr>
+                            <td>2023-11-13</td>
+                            <td>Health Rewards App</td>
+                            <td>156</td>
+                            <td>42</td>
+                            <td>$0.45</td>
+                        </tr>
+                        <tr>
+                            <td>2023-11-12</td>
+                            <td>SurveyEarn Platinum</td>
+                            <td>132</td>
+                            <td>38</td>
+                            <td>$0.30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Manage Offers Tab -->
+        <div id="offers-content" class="admin-content" style="display: none;">
+            <div class="admin-card">
+                <h2>Manage Offers</h2>
+                <div class="search-filter">
+                    <input type="text" placeholder="Search offers..." style="width: 300px; padding: 10px; margin-bottom: 20px;">
+                    <select style="width: 200px; padding: 10px; margin-left: 10px;">
+                        <option>All Categories</option>
+                        <option>Gaming</option>
+                        <option>MMO</option>
+                        <option>AI Tools</option>
+                        <option>Crypto</option>
+                        <option>Health</option>
+                    </select>
+                </div>
+                
+                <table class="offer-list">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Clicks</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>142</td>
+                            <td>Blitz Play: Win Money in 60 Seconds</td>
+                            <td>Gaming</td>
+                            <td>328</td>
+                            <td><span style="color: green;">Active</span></td>
+                            <td class="action-buttons">
+                                <button class="btn btn-edit">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>141</td>
+                            <td>AI Content Creator Pro</td>
+                            <td>AI Tools</td>
+                            <td>215</td>
+                            <td><span style="color: green;">Active</span></td>
+                            <td class="action-buttons">
+                                <button class="btn btn-edit">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>140</td>
+                            <td>Crypto Tracker Plus</td>
+                            <td>Crypto</td>
+                            <td>187</td>
+                            <td><span style="color: green;">Active</span></td>
+                            <td class="action-buttons">
+                                <button class="btn btn-edit">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>139</td>
+                            <td>Health Rewards App</td>
+                            <td>Health</td>
+                            <td>156</td>
+                            <td><span style="color: orange;">Paused</span></td>
+                            <td class="action-buttons">
+                                <button class="btn btn-edit">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>138</td>
+                            <td>SurveyEarn Platinum</td>
+                            <td>MMO</td>
+                            <td>132</td>
+                            <td><span style="color: green;">Active</span></td>
+                            <td class="action-buttons">
+                                <button class="btn btn-edit">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="pagination" style="margin-top: 20px; display: flex; justify-content: center; gap: 10px;">
+                    <button class="btn">Previous</button>
+                    <button class="btn btn-primary">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn">Next</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add Offer Tab -->
+        <div id="add-offer-content" class="admin-content" style="display: none;">
+            <div class="admin-card">
+                <h2>Add New Offer</h2>
+                <form id="add-offer-form">
+                    <div class="form-group">
+                        <label for="offer-title">Offer Title</label>
+                        <input type="text" id="offer-title" name="offer-title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="offer-category">Category</label>
+                        <select id="offer-category" name="offer-category" required>
+                            <option value="">Select a category</option>
+                            <option value="gaming">Gaming</option>
+                            <option value="mmo">MMO (Make Money Online)</option>
+                            <option value="ai">AI Tools</option>
+                            <option value="health">Health & Wellness</option>
+                            <option value="crypto">Crypto & Web3</option>
+                            <option value="dating">Dating</option>
+                            <option value="sweepstakes">Sweepstakes</option>
+                            <option value="adults">Adults Only</option>
+                            <option value="solar">Solar</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="offer-description">Description</label>
+                        <textarea id="offer-description" name="offer-description" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="offer-image">Image URL</label>
+                        <input type="text" id="offer-image" name="offer-image" required>
+                        <small>Or upload an image:</small>
+                        <input type="file" id="image-upload" style="margin-top: 5px;">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="offer-link">CPA Link</label>
+                        <input type="url" id="offer-link" name="offer-link" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="offer-payout">Payout Description</label>
+                        <input type="text" id="offer-payout" name="offer-payout" placeholder="e.g., $1.50 per install" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="offer-platform">Platform (optional)</label>
+                        <input type="text" id="offer-platform" name="offer-platform" placeholder="e.g., Mobile, PC, etc.">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="featured"> Mark as featured offer
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="active" checked> Active
+                        </label>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                        <button type="submit" class="btn btn-primary">Save Offer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Categories Tab -->
+        <div id="categories-content" class="admin-content" style="display: none;">
+            <div class="admin-card">
+                <h2>Manage Categories</h2>
+                <div class="current-categories" style="margin-bottom: 30px;">
+                    <h3>Current Categories</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
+                        <div style="background: #f0f0f0; padding: 8px 15px; border-radius: 20px; display: flex; align-items: center;">
+                            Gaming <button style="margin-left: 8px; background: none; border: none; color: #ff4757; cursor: pointer;">×</button>
+                        </div>
+                        <div style="background: #f0f0f0; padding: 8px 15px; border-radius: 20px; display: flex; align-items: center;">
+                            MMO <button style="margin-left: 8px; background: none; border: none; color: #ff4757; cursor: pointer;">×</button>
+                        </div>
+                        <div style="background: #f0f0f0; padding: 8px 15px; border-radius: 20px; display: flex; align-items: center;">
+                            AI Tools <button style="margin-left: 8px; background: none; border: none; color: #ff4757; cursor: pointer;">×</button>
+                        </div>
+                        <div style="background: #f0f0f0; padding: 8px 15px; border-radius: 20px; display: flex; align-items: center;">
+                            Health <button style="margin-left: 8px; background: none; border: none; color: #ff4757; cursor: pointer;">×</button>
+                        </div>
+                        <div style="background: #f0f0f0; padding: 8px 15px; border-radius: 20px; display: flex; align-items: center;">
+                            Crypto <button style="margin-left: 8px; background: none; border: none; color: #ff4757; cursor: pointer;">×</button>
+                        </div>
+                        <div style="background: #f0f0f0; padding: 8px 15px; border-radius: 20px; display: flex; align-items: center;">
+                            Dating <button style="margin-left: 8px; background: none; border: none; color: #ff4757; cursor: pointer;">×</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="add-category">
+                    <h3>Add New Category</h3>
+                    <form id="add-category-form" style="display: flex; gap: 10px; margin-top: 15px;">
+                        <input type="text" placeholder="Category name" style="flex: 1; padding: 10px;">
+                        <input type="text" placeholder="Emoji (optional)" style="width: 100px; padding: 10px;">
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Settings Tab -->
+        <div id="settings-content" class="admin-content" style="display: none;">
+            <div class="admin-card">
+                <h2>Website Settings</h2>
+                <form id="settings-form">
+                    <div class="form-group">
+                        <label for="site-title">Site Title</label>
+                        <input type="text" id="site-title" name="site-title" value="NeonLeads">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="site-description">Site Description</label>
+                        <textarea id="site-description" name="site-description">Hand-picked websites that reward you for trying, clicking, signing up, or downloading. Start earning passively just by exploring!</textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="site-logo">Logo URL</label>
+                        <input type="text" id="site-logo" name="site-logo" value="images/logo.png">
+                        <small>Or upload a new logo:</small>
+                        <input type="file" id="logo-upload" style="margin-top: 5px;">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="theme-color">Theme Color</label>
+                        <input type="color" id="theme-color" name="theme-color" value="#6c5ce7">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="ga-code">Google Analytics Code (optional)</label>
+                        <input type="text" id="ga-code" name="ga-code" placeholder="UA-XXXXX-Y">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="affiliate-disclosure">Affiliate Disclosure Text</label>
+                        <textarea id="affiliate-disclosure" name="affiliate-disclosure">Some links on this site are affiliate or CPA links. We may earn a commission at no extra cost to you.</textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                        <button type="submit" class="btn btn-primary">Save Settings</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Admin panel functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab switching
+            const navLinks = document.querySelectorAll('.admin-nav a');
+            const contentSections = document.querySelectorAll('.admin-content');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links
+                    navLinks.forEach(navLink => {
+                        navLink.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Hide all content sections
+                    contentSections.forEach(section => {
+                        section.style.display = 'none';
+                    });
+                    
+                    // Show corresponding content section
+                    const target = this.getAttribute('href').substring(1);
+                    document.getElementById(target + '-content').style.display = 'block';
+                });
+            });
+            
+            // Form submissions
+            const addOfferForm = document.getElementById('add-offer-form');
+            if (addOfferForm) {
+                addOfferForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Offer added successfully!');
+                    this.reset();
+                });
+            }
+            
+            const addCategoryForm = document.getElementById('add-category-form');
+            if (addCategoryForm) {
+                addCategoryForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Category added successfully!');
+                    this.reset();
+                });
+            }
+            
+            const settingsForm = document.getElementById('settings-form');
+            if (settingsForm) {
+                settingsForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Settings saved successfully!');
+                });
+            }
+            
+            // Logout button
+            const logoutBtn = document.getElementById('admin-logout');
+            if (logoutBtn) {
+                logoutBtn.addEventListener('click', function() {
+                    if (confirm('Are you sure you want to log out?')) {
+                        window.location.href = 'index.html';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

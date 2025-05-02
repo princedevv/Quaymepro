@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="health-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Wellness Rewards | QuaymeproLeads</title>
+    <meta name="description" content="Get rewarded for healthy habits with these wellness apps and programs. Earn cash, gift cards, and discounts for taking care of your health.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .health-theme {
+            --primary-color: #00b894;
+            --secondary-color: #55efc4;
+            --accent-color: #0984e3;
+        }
+        
+        .health-theme .card {
+            border: 1px solid rgba(0, 184, 148, 0.3);
+            box-shadow: 0 0 15px rgba(0, 184, 148, 0.2);
+        }
+        
+        .health-theme .card:hover {
+            box-shadow: 0 0 25px rgba(0, 184, 148, 0.4);
+        }
+        
+        .health-theme .btn-primary {
+            background: linear-gradient(to right, #00b894, #55efc4);
+        }
+        
+        .health-theme h2::after {
+            background: linear-gradient(to right, #00b894, #55efc4);
+        }
+        
+        .health-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Quaymepro<span>Leads</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="top-picks.html">Top Picks</a>
+                <a href="trending.html">New & Trending</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <!-- Copy from index.html -->
+    </div>
+
+    <!-- Category Header -->
+    <section class="category-header">
+        <div class="container">
+            <h1>Health & Wellness Rewards 🏋️</h1>
+            <p class="subheadline">Get rewarded for healthy habits with these wellness apps and programs. Earn cash, gift cards, and discounts for taking care of your health.</p>
+            <div class="category-filters">
+                <div class="filter-group">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by">
+                        <option value="popular">Most Popular</option>
+                        <option value="payout">Highest Payout</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="health-type">Type:</label>
+                    <select id="health-type">
+                        <option value="all">All Types</option>
+                        <option value="fitness">Fitness</option>
+                        <option value="nutrition">Nutrition</option>
+                        <option value="mental">Mental Health</option>
+                        <option value="insurance">Insurance</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Grid -->
+    <section class="category-offers">
+        <div class="container">
+            <div class="grid-container">
+                <!-- Offer 1 -->
+                <div class="card featured">
+                    <div class="health-badge">Fitness</div>
+                    <div class="badge">🔥 Trending</div>
+                    <img src="images/health1.jpg" alt="Fitness App" loading="lazy">
+                    <h3>Get Paid to Walk</h3>
+                    <p>Earn cash for every step you take. Syncs with all major fitness trackers.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$1.50 per install</span>
+                        <span class="type">Fitness</span>
+                    </div>
+                    <a href="https://yourcpa.link/paidtowalk" target="_blank" class="btn btn-primary">Start Walking</a>
+                </div>
+                
+                <!-- Offer 2 -->
+                <div class="card">
+                    <div class="health-badge">Nutrition</div>
+                    <img src="images/health2.jpg" alt="Meal Delivery" loading="lazy">
+                    <h3>Healthy Meal Discount</h3>
+                    <p>Get $50 off your first week of healthy meal delivery plus $10 cash back.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$15.00 per order</span>
+                        <span class="type">Nutrition</span>
+                    </div>
+                    <a href="https://yourcpa.link/healthymeals" target="_blank" class="btn btn-primary">Order Now</a>
+                </div>
+                
+                <!-- Offer 3 -->
+                <div class="card">
+                    <div class="health-badge">Mental</div>
+                    <img src="images/health3.jpg" alt="Meditation App" loading="lazy">
+                    <h3>Meditation Rewards</h3>
+                    <p>Earn gift cards for consistent meditation practice with this app.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$5.00 per signup</span>
+                        <span class="type">Mental Health</span>
+                    </div>
+                    <a href="https://yourcpa.link/meditationrewards" target="_blank" class="btn btn-primary">Start Meditating</a>
+                </div>
+                
+                <!-- Offer 4 -->
+                <div class="card featured">
+                    <div class="health-badge">Insurance</div>
+                    <div class="badge">⭐ New Offer</div>
+                    <img src="images/health4.jpg" alt="Health Insurance" loading="lazy">
+                    <h3>Health Insurance Cash Back</h3>
+                    <p>Get $100 cash back when you sign up for qualifying health insurance.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$50.00 per signup</span>
+                        <span class="type">Insurance</span>
+                    </div>
+                    <a href="https://yourcpa.link/insurancecashback" target="_blank" class="btn btn-primary">Get Quote</a>
+                </div>
+                
+                <!-- Offer 5 -->
+                <div class="card">
+                    <div class="health-badge">Fitness</div>
+                    <img src="images/health5.jpg" alt="Workout App" loading="lazy">
+                    <h3>Workout Challenge</h3>
+                    <p>Complete 30-day fitness challenges and earn up to $50 in rewards.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$3.00 per signup</span>
+                        <span class="type">Fitness</span>
+                    </div>
+                    <a href="https://yourcpa.link/workoutchallenge" target="_blank" class="btn btn-primary">Join Challenge</a>
+                </div>
+                
+                <!-- Offer 6 -->
+                <div class="card">
+                    <div class="health-badge">Nutrition</div>
+                    <img src="images/health6.jpg" alt="Vitamin Subscription" loading="lazy">
+                    <h3>Vitamin Subscription</h3>
+                    <p>Get 50% off your first month plus $15 cash back on personalized vitamins.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$10.00 per order</span>
+                        <span class="type">Nutrition</span>
+                    </div>
+                    <a href="https://yourcpa.link/vitamindiscount" target="_blank" class="btn btn-primary">Get Vitamins</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Tips -->
+    <section class="health-tips">
+        <div class="container">
+            <h2>Wellness Tips for Maximum Rewards</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Combine Activities</h3>
+                    <p>Use multiple fitness reward apps simultaneously to maximize earnings.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Meal Prep Savings</h3>
+                    <p>Healthy meal services can save time and money compared to eating out.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Preventative Care</h3>
+                    <p>Many insurance plans offer rewards for completing health screenings.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Mental Health Matters</h3>
+                    <p>Apps that reward meditation can improve both mental health and earnings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <!-- Copy from index.html -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Copy from index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Health filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const sortBy = document.getElementById('sort-by');
+            const healthType = document.getElementById('health-type');
+            const cards = document.querySelectorAll('.category-offers .card');
+            
+            function filterOffers() {
+                const sortValue = sortBy.value;
+                const typeValue = healthType.value;
+                
+                cards.forEach(card => {
+                    const cardType = card.querySelector('.type').textContent.toLowerCase();
+                    
+                    // Type filter
+                    if (typeValue !== 'all' && !cardType.includes(typeValue)) {
+                        card.style.display = 'none';
+                    } else {
+                        card.style.display = 'block';
+                    }
+                });
+                
+                // Convert NodeList to Array for sorting
+                const cardsArray = Array.from(cards);
+                const container = document.querySelector('.grid-container');
+                
+                // Sort based on selection
+                if (sortValue === 'payout') {
+                    cardsArray.sort((a, b) => {
+                        const aPayout = parseFloat(a.querySelector('.payout').textContent.replace(/\$| per .*/, ''));
+                        const bPayout = parseFloat(b.querySelector('.payout').textContent.replace(/\$| per .*/, ''));
+                        return bPayout - aPayout;
+                    });
+                } else if (sortValue === 'newest') {
+                    // This would normally come from a data attribute with actual dates
+                    cardsArray.sort((a, b) => {
+                        return Math.random() - 0.5; // Random for demo
+                    });
+                }
+                
+                // Re-append sorted cards
+                cardsArray.forEach(card => {
+                    container.appendChild(card);
+                });
+            }
+            
+            sortBy.addEventListener('change', filterOffers);
+            healthType.addEventListener('change', filterOffers);
+        });
+    </script>
+</body>
+</html>

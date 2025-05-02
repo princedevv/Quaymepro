@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="apps-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewarding Apps & Software | QuaymeproLeads</title>
+    <meta name="description" content="Get paid to try apps and software. Earn cash, gift cards, or premium subscriptions just for downloading and testing new tools.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .apps-theme {
+            --primary-color: #0984e3;
+            --secondary-color: #74b9ff;
+            --accent-color: #a29bfe;
+        }
+        
+        .app-badge {
+            background-color: var(--accent-color);
+            color: #2d3436;
+        }
+        
+        .app-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.5s ease;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-10px) rotateZ(2deg);
+        }
+        
+        .app-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(9, 132, 227, 0.1) 0%, transparent 100%);
+            z-index: -1;
+        }
+        
+        .platform-icon {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 30px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Quaymepro<span>Leads</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="top-picks.html">Top Picks</a>
+                <a href="trending.html">New & Trending</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <!-- Copy from index.html -->
+    </div>
+
+    <!-- Category Header -->
+    <section class="category-header">
+        <div class="container">
+            <h1>Rewarding Apps & Software 📲</h1>
+            <p class="subheadline">Get paid to try apps and software. Earn cash, gift cards, or premium subscriptions just for downloading and testing new tools.</p>
+            <div class="category-filters">
+                <div class="filter-group">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by" class="styled-select">
+                        <option value="popular">Most Popular</option>
+                        <option value="payout">Highest Payout</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="platform">Platform:</label>
+                    <select id="platform" class="styled-select">
+                        <option value="all">All Platforms</option>
+                        <option value="ios">iOS</option>
+                        <option value="android">Android</option>
+                        <option value="windows">Windows</option>
+                        <option value="mac">Mac</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Grid -->
+    <section class="category-offers">
+        <div class="container">
+            <div class="grid-container">
+                <!-- Offer 1 -->
+                <div class="card featured app-card card-3d">
+                    <div class="badge app-badge">🔥 Hot</div>
+                    <div class="platform-icon">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <img src="images/app1.jpg" alt="Survey App" loading="lazy">
+                    <h3>SurveyJunkie Mobile</h3>
+                    <p>Earn up to $50/month taking surveys on your phone. Cash out via PayPal.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$2.00 per install</span>
+                        <span class="type">iOS & Android</span>
+                    </div>
+                    <a href="https://yourcpa.link/surveyjunkie" target="_blank" class="btn btn-primary">Download Now</a>
+                </div>
+                
+                <!-- Offer 2 -->
+                <div class="card app-card card-3d">
+                    <div class="platform-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <img src="images/app2.jpg" alt="Cashback App" loading="lazy">
+                    <h3>Rakuten Cash Back</h3>
+                    <p>Get cash back at 3000+ stores. $10 welcome bonus after first purchase.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$5.00 per install</span>
+                        <span class="type">Android</span>
+                    </div>
+                    <a href="https://yourcpa.link/rakuten" target="_blank" class="btn btn-primary">Get Cash Back</a>
+                </div>
+                
+                <!-- Offer 3 -->
+                <div class="card app-card card-3d">
+                    <div class="platform-icon">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <img src="images/app3.jpg" alt="VPN Software" loading="lazy">
+                    <h3>NordVPN Premium</h3>
+                    <p>Top-rated VPN service. 68% discount + 3 months free for new users.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$15.00 per sale</span>
+                        <span class="type">Windows/Mac</span>
+                    </div>
+                    <a href="https://yourcpa.link/nordvpn" target="_blank" class="btn btn-primary">Get Protection</a>
+                </div>
+                
+                <!-- Offer 4 -->
+                <div class="card featured app-card card-3d">
+                    <div class="badge app-badge">⭐ New</div>
+                    <div class="platform-icon">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <img src="images/app4.jpg" alt="Language App" loading="lazy">
+                    <h3>Duolingo Plus</h3>
+                    <p>Learn a language for free. Premium version removes ads and adds features.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$8.00 per upgrade</span>
+                        <span class="type">iOS</span>
+                    </div>
+                    <a href="https://yourcpa.link/duolingo" target="_blank" class="btn btn-primary">Start Learning</a>
+                </div>
+                
+                <!-- Offer 5 -->
+                <div class="card app-card card-3d">
+                    <div class="platform-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <img src="images/app5.jpg" alt="Antivirus" loading="lazy">
+                    <h3>McAfee Total Protection</h3>
+                    <p>Comprehensive antivirus suite. 60% discount for first-year subscription.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$20.00 per sale</span>
+                        <span class="type">Windows/Mac</span>
+                    </div>
+                    <a href="https://yourcpa.link/mcafee" target="_blank" class="btn btn-primary">Get Protected</a>
+                </div>
+                
+                <!-- Offer 6 -->
+                <div class="card app-card card-3d">
+                    <div class="platform-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <img src="images/app6.jpg" alt="Fitness App" loading="lazy">
+                    <h3>MyFitnessPal Premium</h3>
+                    <p>Track nutrition and workouts. 30-day free trial of premium features.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$7.00 per trial</span>
+                        <span class="type">Android</span>
+                    </div>
+                    <a href="https://yourcpa.link/myfitnesspal" target="_blank" class="btn btn-primary">Start Tracking</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Categories -->
+    <section class="app-categories">
+        <div class="container">
+            <h2>Popular App Categories</h2>
+            <div class="categories-grid">
+                <a href="#" class="category-card card-3d">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Money Making</h3>
+                    <p>Earn cash with these apps</p>
+                </a>
+                <a href="#" class="category-card card-3d">
+                    <i class="fas fa-walking"></i>
+                    <h3>Health & Fitness</h3>
+                    <p>Get paid to get healthy</p>
+                </a>
+                <a href="#" class="category-card card-3d">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Gaming</h3>
+                    <p>Play and earn rewards</p>
+                </a>
+                <a href="#" class="category-card card-3d">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>Shopping</h3>
+                    <p>Cash back and discounts</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <!-- Copy from index.html -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Copy from index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Apps filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const sortBy = document.getElementById('sort-by');
+            const platformFilter = document.getElementById('platform');
+            const cards = document.querySelectorAll('.category-offers .card');
+            
+            function filterOffers() {
+                const sortValue = sortBy.value;
+                const platformValue = platformFilter.value;
+                
+                cards.forEach(card => {
+                    const cardPlatform = card.querySelector('.type').textContent.toLowerCase();
+                    
+                    // Platform filter
+                    if (platformValue !== 'all' && !cardPlatform.includes(platformValue)) {
+                        card.style.display = 'none';
+                    } else {
+                        card.style.display = 'block';
+                    }
+                });
+                
+                // Convert NodeList to Array for sorting
+                const cardsArray = Array.from(cards);
+                const container = document.querySelector('.grid-container');
+                
+                // Sort based on selection
+                if (sortValue === 'payout') {
+                    cardsArray.sort((a, b) => {
+                        const aPayout = parseFloat(a.querySelector('.payout').textContent.replace(/\$| per .*/, ''));
+                        const bPayout = parseFloat(b.querySelector('.payout').textContent.replace(/\$| per .*/, ''));
+                        return bPayout - aPayout;
+                    });
+                } else if (sortValue === 'newest') {
+                    // This would normally come from a data attribute with actual dates
+                    cardsArray.sort((a, b) => {
+                        return Math.random() - 0.5; // Random for demo
+                    });
+                }
+                
+                // Re-append sorted cards
+                cardsArray.forEach(card => {
+                    container.appendChild(card);
+                });
+            }
+            
+            sortBy.addEventListener('change', filterOffers);
+            platformFilter.addEventListener('change', filterOffers);
+        });
+    </script>
+</body>
+</html>

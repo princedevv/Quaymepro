@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="adults-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adults Only Rewards | QuaymeproLeads</title>
+    <meta name="description" content="Exclusive 18+ offers with high payouts. These adult-oriented platforms reward you for signups, memberships, and engagement.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .adults-theme {
+            --primary-color: #e84393;
+            --secondary-color: #fd79a8;
+            --accent-color: #ff7675;
+        }
+        
+        .adults-theme .card {
+            border: 1px solid rgba(232, 67, 147, 0.3);
+            box-shadow: 0 0 15px rgba(232, 67, 147, 0.2);
+        }
+        
+        .adults-theme .card:hover {
+            box-shadow: 0 0 25px rgba(232, 67, 147, 0.4);
+        }
+        
+        .adults-theme .btn-primary {
+            background: linear-gradient(to right, #e84393, #fd79a8);
+        }
+        
+        .adults-theme h2::after {
+            background: linear-gradient(to right, #e84393, #fd79a8);
+        }
+        
+        .age-gate {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 9999;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+        
+        .age-gate-content {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 30px;
+            background: #1e272e;
+            border-radius: 10px;
+        }
+        
+        .age-gate-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Age Gate -->
+    <div id="age-gate" class="age-gate">
+        <div class="age-gate-content">
+            <h2><i class="fas fa-exclamation-triangle"></i> Adults Only Content</h2>
+            <p>This section contains adult-oriented offers and is restricted to visitors 18 years or older.</p>
+            <p>By entering, you confirm you are at least 18 years of age.</p>
+            <div class="age-gate-buttons">
+                <button id="age-confirm" class="btn btn-primary">I am 18 or older</button>
+                <button id="age-deny" class="btn btn-secondary">Exit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Quaymepro<span>Leads</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="top-picks.html">Top Picks</a>
+                <a href="trending.html">New & Trending</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <!-- Copy from index.html -->
+    </div>
+
+    <!-- Category Header -->
+    <section class="category-header">
+        <div class="container">
+            <h1>Exclusive Adults Only Offers 🔥</h1>
+            <p class="subheadline">High-paying 18+ platforms that reward you for signups, memberships, and engagement. Must be 18+ to view.</p>
+            <div class="category-filters">
+                <div class="filter-group">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by">
+                        <option value="popular">Most Popular</option>
+                        <option value="highest-payout">Highest Payout</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="offer-type">Offer Type:</label>
+                    <select id="offer-type">
+                        <option value="all">All Types</option>
+                        <option value="dating">Dating</option>
+                        <option value="cams">Cams</option>
+                        <option value="content">Content</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Grid -->
+    <section class="category-offers">
+        <div class="container">
+            <div class="grid-container">
+                <!-- Offer 1 -->
+                <div class="card featured">
+                    <div class="badge">🔥 Highest Payout</div>
+                    <img src="images/adult1.jpg" alt="Elite Dating Club" loading="lazy">
+                    <h3>Elite Dating Club</h3>
+                    <p>Premium dating platform with $25 payout per verified signup.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$25.00 per signup</span>
+                        <span class="type">Dating</span>
+                    </div>
+                    <a href="https://yourcpa.link/elitedating" target="_blank" class="btn btn-primary">Join Now</a>
+                </div>
+                
+                <!-- Offer 2 -->
+                <div class="card">
+                    <img src="images/adult2.jpg" alt="Live Cam Network" loading="lazy">
+                    <h3>Live Cam Network</h3>
+                    <p>Earn $15 for every new premium member you refer.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$15.00 per signup</span>
+                        <span class="type">Cams</span>
+                    </div>
+                    <a href="https://yourcpa.link/livecams" target="_blank" class="btn btn-primary">View Models</a>
+                </div>
+                
+                <!-- Offer 3 -->
+                <div class="card">
+                    <img src="images/adult3.jpg" alt="OnlyFans Alternative" loading="lazy">
+                    <h3>OnlyFans Alternative</h3>
+                    <p>Content creator platform with $10 payout per creator referral.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$10.00 per creator</span>
+                        <span class="type">Content</span>
+                    </div>
+                    <a href="https://yourcpa.link/fansplatform" target="_blank" class="btn btn-primary">Learn More</a>
+                </div>
+                
+                <!-- Offer 4 -->
+                <div class="card featured">
+                    <div class="badge">⭐ New Offer</div>
+                    <img src="images/adult4.jpg" alt="VR Adult Experience" loading="lazy">
+                    <h3>VR Adult Experience</h3>
+                    <p>Immersive virtual reality content with $20 payout per membership.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$20.00 per sale</span>
+                        <span class="type">Content</span>
+                    </div>
+                    <a href="https://yourcpa.link/vradult" target="_blank" class="btn btn-primary">Try VR Demo</a>
+                </div>
+                
+                <!-- Offer 5 -->
+                <div class="card">
+                    <img src="images/adult5.jpg" alt="Swingers Community" loading="lazy">
+                    <h3>Swingers Community</h3>
+                    <p>Exclusive lifestyle community with $18 payout per verified member.</p>
+                    <div class="offer-meta">
+                        <span class="payout">$18.00 per signup</span>
+                        <span class="type">Dating</span>
+                    </div>
+                    <a href="https://yourcpa.link/swingersclub" target="_blank" class="btn btn-primary">Join Community</a>
+                </div>
+                
+                <!-- Offer 6 -->
+                <div class="card">
+                    <img src="images/adult6.jpg" alt="Adult Toy Store" loading="lazy">
+                    <h3>Adult Toy Store</h3>
+                    <p>Discreet shopping with 15% commission on all sales.</p>
+                    <div class="offer-meta">
+                        <span class="payout">15% commission</span>
+                        <span class="type">Other</span>
+                    </div>
+                    <a href="https://yourcpa.link/adulttoys" target="_blank" class="btn btn-primary">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="disclaimer-section">
+        <div class="container">
+            <div class="disclaimer-card">
+                <h3><i class="fas fa-exclamation-circle"></i> Important Disclaimer</h3>
+                <p>All offers on this page are strictly for adults 18 years of age or older. By accessing these links, you confirm you are of legal age in your jurisdiction to view adult content.</p>
+                <p>QuaymeproLeads does not host or produce adult content, but may receive compensation for referrals to third-party platforms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <!-- Copy from index.html -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Copy from index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Age gate functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const ageGate = document.getElementById('age-gate');
+            const ageConfirm = document.getElementById('age-confirm');
+            const ageDeny = document.getElementById('age-deny');
+            
+            // Check if age is already confirmed
+            if (!localStorage.getItem('adultContentConfirmed')) {
+                ageGate.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+            
+            ageConfirm.addEventListener('click', function() {
+                localStorage.setItem('adultContentConfirmed', 'true');
+                ageGate.style.display = 'none';
+                document.body.style.overflow = '';
+            });
+            
+            ageDeny.addEventListener('click', function() {
+                window.location.href = 'index.html';
+            });
+            
+            // Category-specific filtering
+            const sortBy = document.getElementById('sort-by');
+            const offerType = document.getElementById('offer-type');
+            const cards = document.querySelectorAll('.category-offers .card');
+            
+            function filterOffers() {
+                const sortValue = sortBy.value;
+                const typeValue = offerType.value;
+                
+                cards.forEach(card => {
+                    const cardType = card.querySelector('.type').textContent.toLowerCase();
+                    
+                    // Type filter
+                    if (typeValue !== 'all' && !cardType.includes(typeValue)) {
+                        card.style.display = 'none';
+                    } else {
+                        card.style.display = 'block';
+                    }
+                });
+                
+                // Convert NodeList to Array for sorting
+                const cardsArray = Array.from(cards);
+                const container = document.querySelector('.grid-container');
+                
+                // Sort based on selection
+                if (sortValue === 'highest-payout') {
+                    cardsArray.sort((a, b) => {
+                        const aPayout = parseFloat(a.querySelector('.payout').textContent.replace(/\$| per .*/, ''));
+                        const bPayout = parseFloat(b.querySelector('.payout').textContent.replace(/\$| per .*/, ''));
+                        return bPayout - aPayout;
+                    });
+                } else if (sortValue === 'newest') {
+                    // This would normally come from a data attribute with actual dates
+                    cardsArray.sort((a, b) => {
+                        return Math.random() - 0.5; // Random for demo
+                    });
+                }
+                
+                // Re-append sorted cards
+                cardsArray.forEach(card => {
+                    container.appendChild(card);
+                });
+            }
+            
+            sortBy.addEventListener('change', filterOffers);
+            offerType.addEventListener('change', filterOffers);
+        });
+    </script>
+</body>
+</html>
